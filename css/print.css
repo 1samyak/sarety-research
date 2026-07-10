@@ -1,0 +1,83 @@
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  .navbar,
+  .action-bar,
+  .footer {
+    display: none !important;
+  }
+
+  .report-page {
+    background-color: white;
+    padding: 0;
+  }
+
+  .report-container {
+    max-width: 100%;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .report-page-break {
+    width: 8.5in;
+    height: 11in;
+    margin: 0;
+    padding: 0.75in;
+    border: none;
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+
+  .report-page-break:last-of-type {
+    page-break-after: auto;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  p {
+    page-break-inside: avoid;
+  }
+
+  table {
+    page-break-inside: avoid;
+  }
+
+  .sidebar,
+  .chart-placeholder,
+  .toc,
+  .thesis-box,
+  .risk-box,
+  .metrics,
+  .data-table {
+    page-break-inside: avoid;
+  }
+
+  .company-snapshot,
+  .data-table {
+    border: 1px solid #666;
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+}
